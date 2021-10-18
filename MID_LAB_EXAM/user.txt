@@ -1,3 +1,4 @@
 nahinnasir|123|101|User
 nahinnasir|123|1|User
 nahin|123|2|User
+nahinnasir|123|2|Admin
