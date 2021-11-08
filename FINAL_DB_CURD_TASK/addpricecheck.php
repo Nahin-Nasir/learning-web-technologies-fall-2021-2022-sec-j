@@ -4,18 +4,18 @@
 
 	if(isset($_POST['submit'])){
 
-		$productname = $_POST['productname'];
+		$name = $_POST['name'];
 		$bprice	= $_POST['bprice'];
 		$sprice	= $_POST['sprice'];
 
-		if($_POST['productname'] != ""){
+		if($_POST['name'] != ""){
 			if($_POST['bprice'] != ""){
 				if($_POST['sprice'] != ""){
 					
 					$product = [
-								'productname'=> $productname, 
+								'name'=>$name, 
 								'bprice'=>$bprice, 
-								'sprice'=> $sprice, 
+								'sprice'=>$sprice, 
 								
 							];
 							
