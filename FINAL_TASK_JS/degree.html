@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["degree"].value;
+  if (x == "") {
+    alert("select at least one degree ");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+
+<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+ <fieldset>
+ <legend>Degree</legend>
+            <input type="checkbox" name="degree" value="SSC"> SSC
+            <input type="checkbox" name="degree" value="HSC"> HSC
+            <input type="checkbox" name="degree" value="BSc"> BSc
+            <input type="checkbox" name="degree" value="MSc"> MSc
+  <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["femail"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+
+<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+  EMAIL <br><br> <input type="email" name="femail"> <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

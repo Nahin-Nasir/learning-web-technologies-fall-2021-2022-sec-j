@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["d"].value;
+  if (x == ""&& x<="31") {
+    alert("Enter a date ");
+    return false;
+  }
+
+  let y = document.forms["myForm"]["m"].value;
+  if (y == "" && y<="12" ) {
+    alert("Enter a month ");
+    return false;
+  }
+
+
+  let z = document.forms["myForm"]["y"].value;
+  if (z == "" && z<="2016") {
+    alert("Enter a year ");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+
+<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+ <fieldset>
+  <legend><b>DATE OF BIRTH </b></legend>
+                <table>
+                    <tr>
+                        <td align="center">dd</td>
+                        <td align="center">mm</td>
+                        <td align="center">yyyy</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input size="2" type="text" name="d"> /
+                        </td>
+                        <td>
+                            <input size="2" type="text" name="m"> /
+                        </td>
+                        <td>
+                            <input size="4" type="text" name="y">
+                        </td>
+                    </tr>
+                </table>
+  <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+</body>
+</html>
