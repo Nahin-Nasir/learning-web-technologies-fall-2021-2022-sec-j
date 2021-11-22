@@ -1,5 +1,30 @@
 <html>
 <head>
+	 <style>
+
+
+        input[type="button"]
+        {
+        background-color:rgb(58, 187, 247);
+        width:100px;
+        height:40px;
+        }
+        input[type="text"]
+        {
+
+            width:310px;
+            height:40px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        table td {
+            width:100px;
+            height:40px;
+
+        }
+
+
+    </style>
 	<script>
 		function calculate ()
 		{
@@ -15,6 +40,13 @@ else if (operator == '*') {
 else {
     result = number1 / number2;
 }
+		}
+		function clr (){
+			document.getElementById("result").value = ""
+		}
+		function dis()(val)
+		{
+			document.getElementById("result").value+=val
 		}
 	</script>
 </head>
